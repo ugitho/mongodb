@@ -1,0 +1,10 @@
+prefix=/home/ugitho/NGUYENKHAC/projects/sdk/mongodb
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${exec_prefix}/include
+
+Name: libbson static archive
+Description: The libbson BSON serialization library.
+Version: 1.13.0
+Libs: -L${libdir} -lbson-static-1.0  -lgcc -lgcc_s -lc -lgcc -lgcc_s /usr/lib/x86_64-linux-gnu/librt.so /usr/lib/x86_64-linux-gnu/libm.so -pthread
+Cflags: -I${includedir}/libbson-1.0 -DBSON_STATIC
